@@ -4,10 +4,10 @@
 
 
 var config = {
-    entry: './main.js',
+    entry: './src/app/main.js',
 
     output: {
-        path:'./',
+        path: './',
         filename: 'bundle.js'
     },
 
