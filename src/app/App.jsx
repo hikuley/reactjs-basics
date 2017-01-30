@@ -3,8 +3,15 @@ import React from 'react';
 import Header from "./companents/Header.jsx";
 import Home from "./companents/Home.jsx";
 import Event from "./companents/Event.jsx"
+import Footer from "./companents/Footer.jsx"
+
 
 class App extends React.Component {
+
+    onGreet() {
+        alert("Hello");
+    }
+
     render() {
         var user = {
             name: "Lamiya",
@@ -31,9 +38,11 @@ class App extends React.Component {
                 </div>
 
                 <div className="row">
-                    <Event user={user}/>
+                    <Event greet={this.onGreet} user={user}/>
                 </div>
-
+                <div className="row">
+                    <Footer/>
+                </div>
             </div>
         );
     }

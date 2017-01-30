@@ -55,9 +55,10 @@ class Event extends React.Component {
                 </table>
                 <p>Time :{this.state.time}</p>
                 <button onClick={this.plusAge.bind(this)} className="btn btn-primary">Make Me Older</button>
+                <hr/>
+                <button onClick={this.props.greet} className="btn btn-primary">Greet</button>
             </div>
         );
     }
-
 }
 export default Event;
