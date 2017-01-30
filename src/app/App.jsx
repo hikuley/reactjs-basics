@@ -4,12 +4,18 @@ import Header from "./companents/Header.jsx";
 import Home from "./companents/Home.jsx";
 import Event from "./companents/Event.jsx"
 import Footer from "./companents/Footer.jsx"
+import Lifecycle from "./companents/Lifecycle.jsx"
 
 
 class App extends React.Component {
 
     onGreet() {
         alert("Hello");
+    }
+
+
+    onClick(e) {
+        alert();
     }
 
     render() {
@@ -43,6 +49,16 @@ class App extends React.Component {
                 <div className="row">
                     <Footer/>
                 </div>
+
+                <div className="row">
+                    <button className="btn btn-primary" onClick={this.onClick}>Auto Bind Button</button>
+                </div>
+                <hr/>
+                <p>Component Lifecycle</p>
+                <div className="row">
+                    <Lifecycle/>
+                </div>
+
             </div>
         );
     }

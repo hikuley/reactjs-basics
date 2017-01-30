@@ -28,6 +28,7 @@ class Event extends React.Component {
         this.setState({
             age: this.state.age + 1
         });
+
     }
 
     render() {
