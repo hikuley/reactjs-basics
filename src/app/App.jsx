@@ -1,4 +1,5 @@
 import React from 'react';
+import {Router, Route, Link, browserHistory} from 'react-router';
 
 import Header from "./companents/Header.jsx";
 import Home from "./companents/Home.jsx";
@@ -13,7 +14,6 @@ class App extends React.Component {
         alert("Hello");
     }
 
-
     onClick(e) {
         alert();
     }
@@ -27,6 +27,7 @@ class App extends React.Component {
 
         }
         return (
+
             <div className="container">
 
                 <div className="row">

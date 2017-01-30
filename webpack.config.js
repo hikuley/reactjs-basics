@@ -1,6 +1,8 @@
 /**
  * Created by hikuley on 28.01.2017.
  */
+
+const BabiliPlugin = require("babili-webpack-plugin");
 var config = {
     entry: './src/app/main.js',
     output: {
@@ -12,7 +14,6 @@ var config = {
         inline: true,
         port: 5050
     },
-
     module: {
         loaders: [
             {
