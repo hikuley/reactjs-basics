@@ -1,7 +1,7 @@
 /**
  * Created by hikuley on 28.01.2017.
  */
-
+var webpack = require('webpack');
 var UglifyJsPlugin = require('uglify-js-plugin');
 var config = {
     entry: './src/app/main.js',
@@ -16,9 +16,14 @@ var config = {
         port: 5050
     },
     plugins: [
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': '"production"'
+            }
+        }),
         new UglifyJsPlugin({
             compress: true, //default 'true', you can pass 'false' to disable this plugin
-            debug: true //default 'false', it will display some information in console,
+            debug: true, //default 'false', it will display some information in console,
         })
     ],
     module: {
