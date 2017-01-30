@@ -28,3 +28,5 @@ var config = {
     }
 }
 module.exports = config;
+
+//https://facebook.github.io/react/docs/optimizing-performance.html#use-the-production-build
