@@ -1,16 +1,13 @@
 /**
  * Created by hikuley on 28.01.2017.
  */
-
-
 var config = {
     entry: './src/app/main.js',
-
     output: {
-        path: './',
-        filename: 'bundle.js'
+        path: './dist/app',
+        filename: 'bundle.js',
+        publicPath: "/app/"
     },
-
     devServer: {
         inline: true,
         port: 5050
@@ -29,5 +26,4 @@ var config = {
         ]
     }
 }
-
 module.exports = config;
